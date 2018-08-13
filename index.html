@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blurred Circle Border</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<style>
+</style>
+<div class="blurredbg">
+	<div class="img"></div>
+	<div class="overlay"></div>
+	<img src="https://www.w3schools.com/w3images/avatar2.png" id="avatar" height="500px" class="image"/>
+</div>
+<script>
+$(document).ready(function() {
+	var bgimage = $('#avatar').attr('src');
+	$('.blurredbg .img').css({
+		"background-image": "url('" + bgimage + "')",
+	    "background-repeat": "no-repeat",
+	    "background-size": "cover",
+	    "background-position": "center center"
+	});
+});
+</script>
+</body>
+</html>
